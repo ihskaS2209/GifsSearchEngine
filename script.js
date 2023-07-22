@@ -38,7 +38,7 @@ function callServer(){
         searchBoxVal = "";
     }
 
-    const URL = `https://api.giphy.com/v1/gifs/search?api_key=vFRSFWo6g7vJ7ZAjt3DMDolU52ORTxwH&q=${searchBoxVal}&limit=5`;
+    const URL = `https://api.giphy.com/v1/gifs/search?api_key=vFRSFWo6g7vJ7ZAjt3DMDolU52ORTxwH&q=${searchBoxVal}`;
     const promise = fetch(URL);
     promise.then(response=>{
         response.json().then(result=>{
